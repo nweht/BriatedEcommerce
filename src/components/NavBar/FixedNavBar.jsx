@@ -8,9 +8,11 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import CartWidget from "../CartWidget/CartWidget";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { cartContext } from "../../context/cartContext";
 
 function CollapsibleExample() {
-
+  const { getTotalItemCount } = useContext(cartContext);
     return (
     <Navbar collapseOnSelect expand="md"  variant="dark" sticky="top" bg="dark">
       <Container>
@@ -21,16 +23,21 @@ function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Consolas" id="collasible-nav-dropdown">
-              <NavDropdown.Item>PS5</NavDropdown.Item>
-              <NavDropdown.Item>Juegos</NavDropdown.Item>
-              <NavDropdown.Item>Accesorios</NavDropdown.Item>
-              <NavDropdown.Divider />
+       
+              <NavDropdown.Item href="/console/PS5">PS5</NavDropdown.Item>
+ 
+            
+              <NavDropdown.Item href='/console/PC'>PC</NavDropdown.Item>
+  
+              <NavDropdown.Item href='/console/Nintendo Switch'>Nintendo Switch</NavDropdown.Item>
+
               
             </NavDropdown>
           </Nav>
           
                 <Nav className="me-auto">
-                <Nav.Link href="#" style={{paddingLeft : '20px'}}> <CartWidget/> </Nav.Link>
+                  <Link to={'/cart'}>
+                <Nav.Link style={{paddingLeft : '20px'}}> <CartWidget/></Nav.Link><span>{getTotalItemCount() > 0 && getTotalItemCount()}</span> </Link>
                 </Nav>
         </Navbar.Collapse>
       </Container>

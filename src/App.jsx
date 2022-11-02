@@ -16,8 +16,10 @@ function App(){
 <Route path="/" element={<><Carrusel /><ItemListContainer /></>}></Route>
 <Route path="/games/:itemID" element={<ItemDetailContainer />}></Route>
 
-<Route path="/category/:categoryID" element={<ItemListContainer />}
-            />
+<Route path="/console/:consoleID" element={<><ItemListContainer /></>}/>
+<Route path="/cart" element={<ItemListContainer />}/>
+
+            
 </Routes>
     </div>
     </BrowserRouter>
