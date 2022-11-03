@@ -1,0 +1,19 @@
+.background{
+    background-image: url("https://wallpapercave.com/wp/wp2661692.jpg");
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0 0 0 0;
+    max-width: fit-content;
+
+}
+.colorBox{
+    display: flex;
+    align-items: center;
+    border-color: rgb(188, 29, 202);
+    border-width: 5px;
+    border-style: solid;
+    margin-top: 5%;
+    border-radius: 7px;
+    min-width: 400px;
+
+}

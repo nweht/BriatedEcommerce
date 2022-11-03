@@ -4,6 +4,8 @@ import { getJuegos, getJuegosByConsole, getUnJuego } from '../../services/fireba
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
 import Loader from '../Loader/Loader';
+import { Container } from 'react-bootstrap';
+import './ItemListContainer.css';
 
 function ItemListContainer(props) {
   const [gamesList, setGamesList] = useState([]);
@@ -28,9 +30,9 @@ function ItemListContainer(props) {
   }, [consoleID]);
 
   return (
-    <div className="container">
+    <Container>
       {isLoading ? <Loader /> : <ItemList gamesList={gamesList} />}
-    </div>
+      </Container>
   );
 }
 

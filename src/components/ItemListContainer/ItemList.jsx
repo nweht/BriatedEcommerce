@@ -5,7 +5,6 @@ import FlexWrapper from "../FlexWrapper/FlexWrapper";
 
 function ItemList(props) {
   return (
-    <>
       <FlexWrapper>
         {props.gamesList.map((juego) => {
           return (
@@ -21,7 +20,7 @@ function ItemList(props) {
           );
         })}
       </FlexWrapper>
-    </>
+
   );
 }
 

@@ -2,18 +2,11 @@ import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-
+import './Carousel.css'
 function Carrusel(props) {
-  let carrusel = {display: 'flex',
-    width: '100%',
-    maxWidth: '60%',
-    margin: '5% auto',
-    justifyContent: 'center'};
-
-   
-    
+     
   return (
-    <Carousel style = {carrusel}>
+    <Carousel className="carruselReact">
       
       <Carousel.Item>
       <Link to={'/games/g8L6ui1yi5jgT6o39PyQ'}>
