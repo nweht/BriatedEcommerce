@@ -8,13 +8,14 @@ import { CartContextProvider } from "./context/cartContext";
 import './components/ItemListContainer/ItemListContainer.css';
 import { Container } from "react-bootstrap";
 import CartView from "./components/CartView/CartView";
+import UserPaymentForm from './components/Payment/Payment'
 
 function App(){
   return(
     <CartContextProvider >
     <BrowserRouter>
     <FixedNavBar />
-    <Container className="background">
+    <Container className="background" >
   <Routes>
    
 <Route path="/" element={<><Carrusel /><ItemListContainer /></>}></Route>
@@ -22,7 +23,7 @@ function App(){
 
 <Route path="/console/:consoleID" element={<><ItemListContainer /></>}/>
 <Route path="/cart" element={<CartView />}/>
-
+<Route path="/payment" element={<UserPaymentForm />}/>
             
 </Routes>
 </Container>

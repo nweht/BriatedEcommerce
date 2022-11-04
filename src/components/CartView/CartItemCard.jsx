@@ -16,11 +16,11 @@ function CartItemCard(props) {
         <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.detail}</Card.Text>
-        <Card.Footer className='footer'>
+        <Card.Footer className='footerCart'>
         <Card.Text>Precio Total: ${props.price*props.count}</Card.Text>
         <Card.Text>Cantidad: {props.count}</Card.Text>
         <Link to={`/games/${props.id}`}>
-        <Button className='buttonTrash'variant="primary"><BsFillTrashFill></BsFillTrashFill></Button></Link>
+        <Button className='buttonTrash'variant="primary" style={{textDecoration:'none'}}><BsFillTrashFill ></BsFillTrashFill></Button></Link>
         </Card.Footer >
       </Card.Body>
     </Card>

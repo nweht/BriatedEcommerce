@@ -3,9 +3,10 @@ import { createPaymentOrder, get } from "../../services/firebase";
 import { useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import InputForm from "./PaymentForm";
-import FlexWrapper from "../FlexWrapper/flexwrapper";
+import FlexWrapper from "../FlexWrapper/FlexWrapper";
+import '../CartView/Cart.css'
 
-export default function UserForm({ cart, getTotalPrice }) {
+export default function UserPaymentForm({ cart, getTotalPrice }) {
   const navigate = useNavigate();
 
   const [userData, setUserData] = useState({
@@ -39,9 +40,9 @@ export default function UserForm({ cart, getTotalPrice }) {
   }
 
   return (
-    <Container className='itemDetailContainer'>
-    <Container className='divDetail' >
-      <FlexWrapper>
+    <Container className='cartContainer'>
+    <Container className='payForm'>
+
     <form onSubmit={onSubmit}>
       <InputForm
         value={userData.name}
@@ -65,7 +66,7 @@ export default function UserForm({ cart, getTotalPrice }) {
       />
       <button type="submit">Crear orden</button>
     </form>
-    </FlexWrapper>
+
     </Container>
     </Container>
   );

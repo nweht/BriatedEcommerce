@@ -1,8 +1,9 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
-export default function InputForm(props) {
+export default function PaymentForm(props) {
   return (
-    <div style={{ display: "flex", marginBottom: 8 }}>
+    <Container className="payCard">
       <label style={{ width: "100px", marginRight: 4 }}>{props.title}</label>
       <input
         value={props.value}
@@ -11,6 +12,6 @@ export default function InputForm(props) {
         type="text"
         onChange={props.onChange}
       />
-    </div>
+    </Container>
   );
 }

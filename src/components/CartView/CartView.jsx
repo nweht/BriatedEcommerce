@@ -31,7 +31,7 @@ if(cart.length>0)
                 ></CartItemCard>
         ))}
         <Container>
-        <Link to={'/payment'}>
+        <Link to={'/payment'} style={{textDecoration:'none'}}>
         <Button className='paymentButton'>Realizar el Pago</Button></Link>
         </Container>
 </Container>

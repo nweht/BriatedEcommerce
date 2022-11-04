@@ -1,11 +1,12 @@
-.background{
+/* .background{
     background-image: url("https://wallpapercave.com/wp/wp2661692.jpg");
     background-attachment: fixed;
     width: 100%;
     margin: 0 0 0 0;
     max-width:none;
     font-family: 'Raleway', sans-serif;
-}
+    color:white;
+} */
 .colorBox{
     display: flex;
     align-items: center;
@@ -15,5 +16,6 @@
     margin-top: 5%;
     border-radius: 7px;
     min-width: 400px;
+
 
 }
