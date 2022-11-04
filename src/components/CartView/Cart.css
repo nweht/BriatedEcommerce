@@ -1,0 +1,89 @@
+.cartBox{
+    border-color: #bc1dca;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #2a2a2a;
+}
+.cartContainer{
+    height:max-content;
+    padding-top: 3%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 4.4vh;
+}
+.paymentButton{
+
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto auto 2% auto;
+
+}
+
+.buttonCard{
+    background-color: transparent;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    color:red;
+    border-radius: 5%;
+  }
+  .buttonCard:hover{
+    background-color: red;
+    color: white;
+    border-color: transparent;
+  }
+
+.cartCard{
+    width: 250px;
+    height: 680px;
+    margin-bottom: 2% ;
+    background-color: rgb(43, 43, 43);
+    border-style: solid;
+    border-color: #bc1dca;
+    border-width: 2px;
+    text-align: center;
+    text-justify: inter-word;
+    color: white;
+    margin-top: 1%;
+    display: flex;
+
+  }
+  .cardImg{
+    height: 250px;
+    width: auto;
+  }
+  .cardStyle{
+  width: 100%;
+  background-color: transparent;
+  margin: 5% 5% 5% 5%;
+  border-style: none;
+  
+  }
+  .footer{
+  position: absolute;
+  bottom: 0%;
+  left:5%;
+  background-color: transparent;
+  }
+  .buttonCard{
+    background-color: transparent;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    color:red;
+    border-radius: 5%;
+  }
+  .buttonCard:hover{
+    background-color: red;
+    color: white;
+    border-color: transparent;
+  }

@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 
 import { getUnJuego } from "../../services/firebase";
 import FlexWrapper from "../FlexWrapper/FlexWrapper";
-
+import './CardDetail.css'
 import { useParams } from "react-router-dom";
 import ItemCard from "./ItemCard";
+import { Container } from "react-bootstrap";
 
 function ItemDetailContainer(props) {
   const [juego, setJuego] = useState({});
@@ -24,13 +25,15 @@ function ItemDetailContainer(props) {
   }, [itemID]);
 
   return (
-    <FlexWrapper>
+    <Container className="flexDetailContainer">
+      <Container className='contentBox'>
       {feedbackMsg !== null ? (
         <h4>Error: {feedbackMsg}</h4>
       ) : (
         <ItemCard juego={juego} />
       )}
-    </FlexWrapper>
+      </Container>
+    </Container>
   );
 }
 

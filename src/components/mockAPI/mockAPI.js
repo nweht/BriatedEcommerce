@@ -112,7 +112,7 @@ const data = [
   
   export function getJuegos() {
     return new Promise((resolve) => {
-      setTimeout(() => resolve(data), 1000);
+      setTimeout(() => resolve(data), 1500);
     });
   }
   
@@ -121,7 +121,7 @@ const data = [
       let juegoReq = data.find((item) => {
         return item.id === Number(idParams);
       });
-      setTimeout(() => resolve(juegoReq), 1000);
+      setTimeout(() => resolve(juegoReq), 1500);
     });
   }
   
@@ -130,7 +130,7 @@ const data = [
       let arrayFilterJuegos = data.filter(
         (item) => item.console === idConsoleParams
       );
-      setTimeout(() => resolve(arrayFilterJuegos), 1000);
+      setTimeout(() => resolve(arrayFilterJuegos), 1500);
     });
   }
 

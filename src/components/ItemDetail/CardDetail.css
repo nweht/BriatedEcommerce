@@ -1,5 +1,16 @@
 .gameImage{
-    width: 400px;
+    width: 80%;
     height: auto;
     border-radius: 4%;
+}
+.flexDetailContainer{
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.contentBox{
+    border-color: rgb(188, 29, 202);
+    border-width: 5px;
+    border-style: solid;
 }

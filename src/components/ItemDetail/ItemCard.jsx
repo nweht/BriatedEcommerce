@@ -19,8 +19,7 @@ function ItemCard({juego}) {
     
 if(juego.title)
   return (
-    <Container  className='itemDetailContainer'>
-    <Container  className='divDetail' >
+    <Container  className='cardDetail'>
 <Row className='mainRow'><Col >
 <img  className='gameImage' src={juego.img} alt={juego.title}/>
 </Col>
@@ -40,7 +39,7 @@ ${juego.price}
 </Row>
 <ItemCount  onAddToCart={handleAddToCart} text='Agregar al Carrito' stock={juego.stock} initial={1} />
 
-</Col></Row></Container></Container>
+</Col></Row></Container>
   );
   return (
   <Container  style={{display:'flex', justifyContent:'center',alignItems:'center', marginTop:'-10%'}} className='itemDetailContainer'>

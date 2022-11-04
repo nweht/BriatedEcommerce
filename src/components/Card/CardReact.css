@@ -1,14 +1,16 @@
 .cardReact{
   width: 250px;
-  height: 720px;
+  height: 680px;
   display: inline-flex;
   margin-bottom: 2% ;
   background-color: rgb(43, 43, 43);
   border-style: solid;
-border-color: #bc1dca;
-border-width: 3px;
+  border-color: #bc1dca;
+  border-width: 2px;
   text-align: center;
   text-justify: inter-word;
+  color: white;
+  margin-left: 2%;
 }
 .cardImg{
   height: 250px;
@@ -24,6 +26,19 @@ border-style: none;
 .footer{
 position: absolute;
 bottom: 0%;
-left:20%;
+left:16%;
 background-color: transparent;
+}
+.buttonCard{
+  background-color: transparent;
+  border-style: solid;
+  border-color: #bc1dca;
+  border-width: 2px;
+  color:#bc1dca;
+  border-radius: 5%;
+}
+.buttonCard:hover{
+  background-color: #bc1dca;
+  color: white;
+  border-color: transparent;
 }

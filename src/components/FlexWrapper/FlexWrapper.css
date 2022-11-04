@@ -1,21 +1,6 @@
 
-/* .flexWrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 980px;
-    border-radius: 5px;
-    margin: 5px auto;
-    padding: 30px 12px;
-    flex-direction: row;
-  } */
-  
   .flexWrapper{
     display: flex;
     align-content: center;
-    margin-top: 5%;
     flex-wrap: wrap;
-
   }

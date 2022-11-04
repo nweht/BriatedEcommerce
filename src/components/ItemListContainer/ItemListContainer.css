@@ -3,8 +3,8 @@
     background-attachment: fixed;
     width: 100%;
     margin: 0 0 0 0;
-    max-width: fit-content;
-
+    max-width:none;
+    font-family: 'Raleway', sans-serif;
 }
 .colorBox{
     display: flex;

@@ -16,7 +16,7 @@ function CardReact(props) {
         <Card.Text>${props.price}</Card.Text>
         <Card.Text>Stock: {props.stock}</Card.Text>
         <Link to={`/games/${props.id}`}>
-        <Button variant="primary">Comprar</Button></Link>
+        <Button className='buttonCard'variant="primary">COMPRAR</Button></Link>
         </Card.Footer >
       </Card.Body>
     </Card>

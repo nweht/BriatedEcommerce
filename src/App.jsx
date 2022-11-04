@@ -7,10 +7,11 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { CartContextProvider } from "./context/cartContext";
 import './components/ItemListContainer/ItemListContainer.css';
 import { Container } from "react-bootstrap";
+import CartView from "./components/CartView/CartView";
 
 function App(){
   return(
-    <CartContextProvider>
+    <CartContextProvider >
     <BrowserRouter>
     <FixedNavBar />
     <Container className="background">
@@ -20,7 +21,7 @@ function App(){
 <Route path="/games/:itemID" element={<ItemDetailContainer />}></Route>
 
 <Route path="/console/:consoleID" element={<><ItemListContainer /></>}/>
-<Route path="/cart" element={<ItemListContainer />}/>
+<Route path="/cart" element={<CartView />}/>
 
             
 </Routes>
