@@ -7,10 +7,20 @@ function CartContextProvider(props){
     const [cart, setCart] = useState([]);
     
     function addToCart(item, count){
-        let newCart = [...cart];
-        let newItem = { ...item, count };
-        newCart.push(newItem);
-        setCart(newCart);
+        if(itemInCart(item.id)){
+            let newCart = cart.map((itemMap) =>{
+                if (itemMap.id === item.id){
+                    itemMap.count += count;
+                    return itemMap;
+                }
+                else return itemMap;
+            });
+            setCart(newCart);
+        } else {
+            let newCart = cart.map((item) => item);
+            newCart.push({...item,count: count});
+            setCart(newCart);
+        }        
       }
 function removeItem(idToRemove) {
         let newCart = cart.filter((itemInCart) => itemInCart.id !== idToRemove);
@@ -32,6 +42,10 @@ function removeItem(idToRemove) {
         return total;
     }
 
+    function itemInCart(id) {
+        let found = cart.some((item) => item.id === id);
+        return found;
+      }
     
     return(
         <>

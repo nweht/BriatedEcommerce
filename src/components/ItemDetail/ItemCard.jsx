@@ -24,8 +24,8 @@ if(juego.title)
 <img  className='gameImage' src={juego.img} alt={juego.title}/>
 </Col>
 
-<Col className='texto' ><Row>
-{juego.title}
+<Col className='texto' ><Row><h2>{juego.title}</h2>
+
 </Row>
 <br></br>
 <Row>
@@ -37,13 +37,13 @@ if(juego.title)
 <Row>
 ${juego.price}
 </Row>
-<ItemCount  onAddToCart={handleAddToCart} text='Agregar al Carrito' stock={juego.stock} initial={1} />
+<ItemCount onAddToCart={handleAddToCart} text='Agregar al Carrito' stock={juego.stock} initial={1} />
 
 </Col></Row></Container>
   );
   return (
   <Container  style={{display:'flex', justifyContent:'center',alignItems:'center', marginTop:'-10%'}} className='itemDetailContainer'>
-  <Loader />
+  <Loader  />
   </Container>
 )
 }

@@ -15,7 +15,7 @@ function App(){
     <CartContextProvider >
     <BrowserRouter>
     <FixedNavBar />
-    <Container className="background" >
+    <Container>
   <Routes>
    
 <Route path="/" element={<><Carrusel /><ItemListContainer /></>}></Route>

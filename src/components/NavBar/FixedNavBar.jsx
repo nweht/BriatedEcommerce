@@ -14,8 +14,8 @@ function CollapsibleExample() {
     return (
     <Navbar collapseOnSelect expand="md"  variant="dark" sticky="top" bg="dark">
       <Container>
-        <Link to='/'>
-        <Navbar.Brand>BRIATED GAMING</Navbar.Brand>
+        <Link to='/' style={{textDecoration:'none'}}>
+        <Navbar.Brand >BRIATED GAMING</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

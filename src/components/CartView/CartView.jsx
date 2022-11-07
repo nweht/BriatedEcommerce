@@ -2,7 +2,6 @@ import React ,{useContext}from 'react'
 import { Button, Container } from 'react-bootstrap';
 import { cartContext } from '../../context/cartContext';
 import { createPaymentOrder } from '../../services/firebase';
-import FlexWrapper from '../FlexWrapper/FlexWrapper';
 import '../ItemListContainer/ItemListContainer.css';
 import Loader from '../Loader/Loader';
 import { Link } from 'react-router-dom';

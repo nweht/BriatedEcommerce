@@ -16,10 +16,8 @@
     flex-wrap: wrap;
     align-items: center;
     margin: auto;
-    padding-bottom: 8.2vh;
 }
 .paymentButton{
-
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -31,9 +29,12 @@
     color:black;
     border-radius: 5%;
     background-color: #19b991;
-
 }
-
+.paymentButton:hover{
+  background-color: #14ad59;
+  border-color: #14ad59;
+  color: black;
+}
 
 .cartCard{
     width: 250px;
@@ -61,9 +62,7 @@
   border-style: none;
   
   }
-  .footerCart{
-    position: fixed;
-  }
+
   .buttonTrash{
     background-color: transparent;
     border-style: solid;
@@ -87,7 +86,7 @@
       flex-wrap: wrap;
       align-items: center;
       background-color: #2a2a2a;
-      margin-bottom: 88%;
+
   }
   .payCard{
     align-items: center;

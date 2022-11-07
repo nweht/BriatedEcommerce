@@ -1,0 +1,12 @@
+.btnMasMenos{
+    background-color: transparent;
+    border-radius: 0%;
+    width: 5px;
+    height: 5px;
+    text-align: center;
+    font-size: 25px;
+    align-items:center;
+}
+.counter{
+    align-items: center;
+}

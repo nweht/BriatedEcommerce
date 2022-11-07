@@ -16,7 +16,7 @@ function CartItemCard(props) {
         <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.detail}</Card.Text>
-        <Card.Footer className='footerCart'>
+        <Card.Footer>
         <Card.Text>Precio Total: ${props.price*props.count}</Card.Text>
         <Card.Text>Cantidad: {props.count}</Card.Text>
         <Link to={`/games/${props.id}`}>
