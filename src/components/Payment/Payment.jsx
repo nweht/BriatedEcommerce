@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { createPaymentOrder, get } from "../../services/firebase";
 import { useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import InputForm from "./PaymentForm";
-import FlexWrapper from "../FlexWrapper/FlexWrapper";
+import PaymentForm from "./PaymentForm";
 import '../CartView/Cart.css'
+import { cartContext } from "../../context/cartContext";
+import { useContext } from "react";
 
-export default function UserPaymentForm({ cart, getTotalPrice }) {
+export default function UserPaymentForm() {
   const navigate = useNavigate();
-
+  const { cart, removeItem, getTotalPrice } = useContext(cartContext);
   const [userData, setUserData] = useState({
     name: "",
     email: "",
@@ -44,21 +45,21 @@ export default function UserPaymentForm({ cart, getTotalPrice }) {
     <Container className='payForm'>
 
     <form onSubmit={onSubmit}>
-      <InputForm
+      <PaymentForm
         value={userData.name}
         title="Nombre"
         name="name"
         required={true}
         onChange={onInputChange}
       />
-      <InputForm
+      <PaymentForm
         value={userData.email}
         title="Email"
         name="email"
         required={true}
         onChange={onInputChange}
       />
-      <InputForm
+      <PaymentForm
         value={userData.phone}
         title="Teléfono"
         name="phone"

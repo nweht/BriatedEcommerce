@@ -24,21 +24,26 @@ if(juego.title)
 <img  className='gameImage' src={juego.img} alt={juego.title}/>
 </Col>
 
-<Col className='texto' ><Row><h2>{juego.title}</h2>
+<Col  ><Row ><h2 className='title'>{juego.title}</h2>
 
 </Row>
 <br></br>
-<Row>
-{juego.console} 
-<Col >Stock: {juego.stock}</Col></Row>
+<Row><h6>
+{juego.console}
+<Col className='stock'></Col></h6></Row>
 
+<Row className='detail'>
+  <p>{juego.detail}</p>
+
+</Row>
 <br></br><br></br>
 
-<Row>
-${juego.price}
+<Row className='priceStock'><h3><strong>${juego.price}</strong></h3>
+<p>Stock: {juego.stock}</p>
 </Row>
+<Row className='itemCountContainer'>
 <ItemCount onAddToCart={handleAddToCart} text='Agregar al Carrito' stock={juego.stock} initial={1} />
-
+</Row>
 </Col></Row></Container>
   );
   return (

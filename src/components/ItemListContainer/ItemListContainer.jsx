@@ -30,7 +30,7 @@ function ItemListContainer(props) {
   }, [consoleID]);
 
   return (
-    <Container>
+    <Container style={{marginTop:'2%'}}>
       {isLoading ? <Loader /> : <ItemList gamesList={gamesList} />}
       </Container>
   );

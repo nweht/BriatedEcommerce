@@ -15,11 +15,11 @@ export default function ItemCount({ stock, initial, text, onAddToCart }) {
 
   return (
     <Container className="itemCount">
-    <Container style={{display:'flex', justifyContent:'center'}}>
-        <Button className='btnMasMenos'onClick={handleSubstract}>-</Button>
-        <strong style={{marginLeft:'10px', marginRight:'10px', fontSize:'25px'}}> {count} </strong>
+    <Container className='counter'style={{display:'flex', justifyContent:'center'}}>
+        <Button className='btnMenos'onClick={handleSubstract}>-</Button>
+        <strong style={{marginLeft:'10px', marginRight:'10px', fontSize:'20px'}}> {count} </strong>
 
-        <Button className='btnMasMenos' onClick={handleAdd}>+</Button>
+        <Button className='btnMas' onClick={handleAdd}>+</Button>
         </Container>
         <Container style={{display:'flex', justifyContent:'center'}}>
       <Button className='btnCarrito'onClick={() => {onAddToCart(count);}}>{text}</Button>
